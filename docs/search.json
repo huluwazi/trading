@@ -1,10 +1,108 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "web",
+    "objectID": "midphisics/tradingSystem.html",
+    "href": "midphisics/tradingSystem.html",
+    "title": "交易系统",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "判断股票的行动特点和综合人的动机。 # 对冲: 在股票，期货与期权之间对冲\n\n同种类不同周期\n同周期不同种类之间\n\n\n趋势交易法\n突破处买入，反转出卖出\n\n\n震荡交易法\n高抛低吸"
+  },
+  {
+    "objectID": "midphisics/tapAnalysis.html",
+    "href": "midphisics/tapAnalysis.html",
+    "title": "盘口分析",
+    "section": "",
+    "text": "盘口分析\n\n限价单: 填单，设置好买卖的价格。增加流动性，有的交易所免费或者给佣金。\n市价单: 按照现在市场价格，撮合成交。\n盘口: 挂单(maker) –&gt; 成交(分时量，每个时间点位成交数量)/吃单(taker) –&gt; 分价量(每个价位成交数量)\n方法:\n\n最重要的是数量最多的，支撑压力位\n\n如果在不撤单的情况下，必须要把数量最多的吃掉\n如果被撤单或被吃掉，价格会被砸下去/涨上去\n支撑压力位，被砸穿，跟随机构，买卖点\n\n买入\n\n可能是机构提前布置支撑位，价格会快速拉起\n如果价格没有快速拉起，是一个反向做空信号\n\n\n卖出\n\n可能是机构提前布置压力位，价格会快速下降\n如果价格没有快速下降，是一个反向做多信号\n\n\n\n虚假单，撤单，换单\n根据挂单+成交+分加量综合分析买入点\n\n\nK线的形成:\n\n定性和定量的K线\n\n大阳线: 从下到上大量吃卖单\n大阴线: 从上到下大量吃买单\n有成交量的K线更有意义"
+  },
+  {
+    "objectID": "midphisics/buypoints.html",
+    "href": "midphisics/buypoints.html",
+    "title": "云聪十三个买卖点",
+    "section": "",
+    "text": "非常感谢云聪无私分享13个买卖点1"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#b结构-抢筹-或-猎杀止损",
+    "href": "midphisics/buypoints.html#b结构-抢筹-或-猎杀止损",
+    "title": "云聪十三个买卖点",
+    "section": "2B结构 抢筹 或 猎杀止损",
+    "text": "2B结构 抢筹 或 猎杀止损"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#底部头肩的右肩",
+    "href": "midphisics/buypoints.html#底部头肩的右肩",
+    "title": "云聪十三个买卖点",
+    "section": "底部头肩的右肩",
+    "text": "底部头肩的右肩"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#二次测试",
+    "href": "midphisics/buypoints.html#二次测试",
+    "title": "云聪十三个买卖点",
+    "section": "二次测试",
+    "text": "二次测试"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#强势初现",
+    "href": "midphisics/buypoints.html#强势初现",
+    "title": "云聪十三个买卖点",
+    "section": "强势初现",
+    "text": "强势初现"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#趋势线-量能累积突破",
+    "href": "midphisics/buypoints.html#趋势线-量能累积突破",
+    "title": "云聪十三个买卖点",
+    "section": "趋势线 + 量能累积突破",
+    "text": "趋势线 + 量能累积突破"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#趋势线-点位突破",
+    "href": "midphisics/buypoints.html#趋势线-点位突破",
+    "title": "云聪十三个买卖点",
+    "section": "趋势线+ 点位突破",
+    "text": "趋势线+ 点位突破"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#趋势线-形态突破",
+    "href": "midphisics/buypoints.html#趋势线-形态突破",
+    "title": "云聪十三个买卖点",
+    "section": "趋势线 + 形态突破",
+    "text": "趋势线 + 形态突破"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#大形态突破",
+    "href": "midphisics/buypoints.html#大形态突破",
+    "title": "云聪十三个买卖点",
+    "section": "大形态突破",
+    "text": "大形态突破"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#突破后回抽-站稳",
+    "href": "midphisics/buypoints.html#突破后回抽-站稳",
+    "title": "云聪十三个买卖点",
+    "section": "突破后回抽 + 站稳",
+    "text": "突破后回抽 + 站稳"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#突破后n字上涨",
+    "href": "midphisics/buypoints.html#突破后n字上涨",
+    "title": "云聪十三个买卖点",
+    "section": "突破后N字上涨",
+    "text": "突破后N字上涨"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#回调",
+    "href": "midphisics/buypoints.html#回调",
+    "title": "云聪十三个买卖点",
+    "section": "回调",
+    "text": "回调"
+  },
+  {
+    "objectID": "midphisics/buypoints.html#footnotes",
+    "href": "midphisics/buypoints.html#footnotes",
+    "title": "云聪十三个买卖点",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n云聪金融交易分析 https://www.youtube.com/@yuncongtrade↩︎\n云聪13买点 底部反转买点 https://www.youtube.com/watch?v=gX7xHjriMXA&list=PLRGWg7K87hcPQ8dxoYgqAz6Pdv6BHjvpn&index=42↩︎"
   },
   {
     "objectID": "about.html",
@@ -12,5 +110,124 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "之前不要怕，之后不要悔，人生无常，向死而生",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n云聪金融交易分析 https://www.youtube.com/@yuncongtrade↩︎\n道氏理论↩︎"
+  },
+  {
+    "objectID": "midphisics/financialMarket.html",
+    "href": "midphisics/financialMarket.html",
+    "title": "金融市场",
+    "section": "",
+    "text": "传统投资: 股票，债券和基金\n另类投资: 除传统投资之外的投资\n衍生品: 对冲风险(hedge risk)和投机(speculation)\n\n期货\n\n期权"
+  },
+  {
+    "objectID": "midphisics/financialMarket.html#另类投资的类别特点和薪酬结构",
+    "href": "midphisics/financialMarket.html#另类投资的类别特点和薪酬结构",
+    "title": "金融市场",
+    "section": "另类投资的类别、特点和薪酬结构",
+    "text": "另类投资的类别、特点和薪酬结构\n\n特点\n\n需要更高的专业技能\n\n代表事物资产，分散风险\n场外交易\n缺少监管，透明度差\n\n缺少历史数据\n费用高\n\n投资门槛高\n\n投资组合集中\n\n对申购限制高: 杠杆交易对保证金要求高，一般有锁定期\n\n流动性差\n\n投资方法\n\n基金投资 (indirect): 管理费 (2%), 业绩激励 (20%)\n组合投资 (indirect & direct)\n直接投资 (direct)\n\n\n\n特点及投资方法\n\n\n投资和薪酬结构"
+  },
+  {
+    "objectID": "midphisics/financialMarket.html#私募资本房地产基础设施自然资源和对冲基金",
+    "href": "midphisics/financialMarket.html#私募资本房地产基础设施自然资源和对冲基金",
+    "title": "金融市场",
+    "section": "私募资本、房地产、基础设施、自然资源和对冲基金",
+    "text": "私募资本、房地产、基础设施、自然资源和对冲基金\n\n对冲基金\n\n\n私募资本\n\n私募股权\n\n私募债权\n\n\n\n自然资源\n\n\n房地产\n\n\n基础设施"
+  },
+  {
+    "objectID": "midphisics/financialMarket.html#另类投资的业绩计算和评估方法",
+    "href": "midphisics/financialMarket.html#另类投资的业绩计算和评估方法",
+    "title": "金融市场",
+    "section": "另类投资的业绩计算和评估方法",
+    "text": "另类投资的业绩计算和评估方法\n\n业绩评估\n\n\n计算费用和回报\n\n\n衍生品 (Derivatives)\n\n期权\n期权是以某个价格在某个时间买入或卖出某个股票的权利。可以行权，也可以不行权。\n\n期权形式\n\n欧式期权: 仅在行权日可以行权\n\n美式期权: 可以在行权日行权\n\n特征\n\n行权价\n\n期限\n\n标的资产价格\n\n权利金 (期权价格)\n\n种类\n\n认购期权 Call : 以某一个价格买入资格的权利\n\n看多 Call Buy\n\n\n认沽期权 Put : 以某一个价格卖出资格的权利\n\n看空 Put Buy\n\n\n\n三要素\n\ncall / put\nprice\n\nT\n\n作用\n\n对冲风险\n增强收益\n减少成本\n投机工具"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#趋势线和加速线",
+    "href": "midphisics/technicalAnalysis.html#趋势线和加速线",
+    "title": "技术分析",
+    "section": "趋势线和加速线",
+    "text": "趋势线和加速线\n\n\n趋势线\n\n最少穿越两个高点和低点\n\n触点越多越有效，时间越长越有效\n\n有效:表示很稳定。 如果在趋势线上方，代表趋势很完整，不需要着急走。\n\n趋势=惯性=平衡\n\n趋势线没有支撑作用\n\n\n趋势线的角度，两条加速线到顶\n\n以前在纸上画趋势线角度，现在在电脑上角度随缩放变化\n\n45度左右，趋势平稳\n60度左右，行情开始不稳定\n80度左右，非常不稳定\n\n两条加速线到顶\n\n行情可能不稳定\n\n\n趋势线的毛刺\n\n穿透，跌破，回抽: 根据K线组合+量+缺口判断\n\n如果没有产生明确的K线组合+量+缺口: 可以忽略\n两个大阴线或者一根大阴线+小十字星+大阴线: 超过5%，趋势可能发生改变。但是不一定反转，也可能变成形态 (中继形态，反转形态)\n\n\n趋势线跌破后的回抽\n\n强势回抽，两根大阴线跌破，两根大阳线回去 ==&gt; 趋势延续 ==&gt; 抢筹\n弱势回抽，两根大阴线跌破，缩量小阳线慢慢回到趋势，需要等信号\n\n继续有大阴线，行情可能翻转\n没有大阴线，行情继续\n\n横向盘整，大概率有个波浪理论的ABC下跌"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#形态",
+    "href": "midphisics/technicalAnalysis.html#形态",
+    "title": "技术分析",
+    "section": "形态",
+    "text": "形态\n趋势之后，盘整期间会形成形态。\n\n反转形态\n\n头肩底 ABCD \n倒三角形，喇叭形 \n菱形，钻石型\n\n\n\n圆弧形，茶杯带柄，老鸭头\n\n最好带量跌破或突破\n\n\n\n\n岛型反转\n\n\n\n\n中继形态\n\n直角三角形/ 直边三角形，概率很高\n\n突破买入\n\n跌破卖出\n\n\n\n\n普通三角形，楔形，旗形, 窄幅震荡箱体\n\n盘整过程中，波动率小 \n\n通道\n\n\n\n\n总结\n\n波动率小，中继形态。持有\n波动率大，反转形态。买卖点\n波动率大赚小，买入机会"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#缺口理论",
+    "href": "midphisics/technicalAnalysis.html#缺口理论",
+    "title": "技术分析",
+    "section": "缺口理论",
+    "text": "缺口理论\n适用于A股，美股和商品期货: 集合竞价会产生缺口\n\n形态内的缺口几乎没有意义\n\n形态突破的缺口追重要\n\n关键位置缺口次之\n\n缺口是反人性的，有了缺口要沿着方向做"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#支撑与压力测试",
+    "href": "midphisics/technicalAnalysis.html#支撑与压力测试",
+    "title": "技术分析",
+    "section": "支撑与压力测试",
+    "text": "支撑与压力测试\n\n需要有盘口来确认是否时支撑或压力\n\n\n点位支撑压力测试\n\n前期点位 : 历史记忆，基本面估值 (机构拉上去)\n斐波那契反推点\n谐波点位反推\n\n缺口处形成支撑\n\n整数关口\n\n\n\n成交量形成的支撑与压力 Volume profile\n\n\n\n支撑与压力互换\n\n点位\n\n箱体"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#交易区间和盈亏比的运算",
+    "href": "midphisics/technicalAnalysis.html#交易区间和盈亏比的运算",
+    "title": "技术分析",
+    "section": "交易区间和盈亏比的运算",
+    "text": "交易区间和盈亏比的运算"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#突破逆转与持续结构",
+    "href": "midphisics/technicalAnalysis.html#突破逆转与持续结构",
+    "title": "技术分析",
+    "section": "突破、逆转与持续结构",
+    "text": "突破、逆转与持续结构\n\n三个买入点 突破、逆转与持续"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#三大法则",
+    "href": "midphisics/technicalAnalysis.html#三大法则",
+    "title": "技术分析",
+    "section": "三大法则",
+    "text": "三大法则\n\n拉动价格是本质是供给与需求，导致价格的上升与下跌\n\n供给: 谁在买\n\n威科夫的综合人（Composite Man）\n\n威科夫提醒交易者应该跟随综合人（Composite Man）的脚步，像综合人一样思考。他说\n\n\n要把市场中所有的股票、所有的波动都当做一个人操作的结果，这个人称之为综合人。从理论上说，这个人在后台操控着股票。如果你熟悉他的游戏规则，你将大大收益；如果你不懂他的规则，他的操作将不利于你。\n\n总而言之，威科夫的理念认为:：\n\n综合人认真地计划、执行并完成自己的股票操作过程。\n综合人在积累了大量的筹码以后，就通过高成交量来吸引散户进场买入。通过大量的买入和卖出，成交量显著放大，向散户显示这只股票前景广阔。\n交易者必须研究个股图谱，并判断股票的行动特点和综合人的动机。\n通过学习和训练，交易者可以有能力洞察图谱背后隐藏的综合人动机。威科夫和他的同事们认为，如果你能了解综合人的意图，你就能更早地发现交易和投资机会，并且从中获利。\n\n\n吸筹: 在哪个区间\n配发区: 在哪个区间卖\n对手和其他机构的购买成本\n支撑与压力 (筹码)\n\n\n\n\n因果\n\n吸筹区才会有上涨区\nV型反转，卖单衰竭，上涨\n\n努力没结果\n\n努力了没有结果肯定有问题"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#应用",
+    "href": "midphisics/technicalAnalysis.html#应用",
+    "title": "技术分析",
+    "section": "应用",
+    "text": "应用\n\n识别: 10多个识别模式\n跟随: 跟大资金\n调整: 主力进，你进。主力跑，你跑"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#识别模式",
+    "href": "midphisics/technicalAnalysis.html#识别模式",
+    "title": "技术分析",
+    "section": "识别模式",
+    "text": "识别模式\n\n大阳线: 大的垂直供应柱\n\n大阴线: 大的垂直需求柱\n吸筹区:\n\n\n涨: 大阳K资金吸筹\n跌: 小K线散户出货\n吸筹区可能会失败\n一个股票要涨，一定有资金的痕迹\n\n涨，放量，大阳K:上涨放量，大阳K。表示有需求，资金吃货。\n跌，缩量，小K线:量价配合的缩量小K回撤，散户立场\n\n底部放量十字星或小K线，筹码交换\n\n量价异常的小十字星会小K线\n\n\n\n\n强势出现\n跳跃小溪\n\n\n跳过指价格放量穿过阻力区且振幅比较大。回调则是在跳过以后立即测试价位——回调时是缩量的且振幅小—这就确认了之前的跳过行为是正常的。 威科夫方法告诉你在向上跳的回调处买入，或在向下跳的反弹处做空。同样是威科夫方法告诉你不要在突破时买入，如果突破是假的，你就很被动。因此，第一眼看去，似乎威科夫方法是叫你买弱卖强。但如果你仔细研究后你就会明白，他是叫你在强势信号之后的回调测试时买入\n\n\n终极震仓\n终极震仓: 不一定出现，也可能出现多次，庄家最后试探，马上拉起。\n\n\n\n吸筹\n\n\n\n\n派发"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#威科夫五步法",
+    "href": "midphisics/technicalAnalysis.html#威科夫五步法",
+    "title": "技术分析",
+    "section": "威科夫五步法",
+    "text": "威科夫五步法\n\n确定市场的现状和未来可能的趋势\n目前的市场是盘整还是处于行情中？通过你对市场的结构和供需状况进行分析，是否认为近期将会出现行情？这个分析将决定你是否应该进入市场；如果可以入市，是应该做多还是做空？在这个环节中，要使用市场主要指数的k线图和点数图来进行判断。\n选择与市场趋势一致的股票\n在上涨趋势中，选择走势比市场更强的股票。比如，寻找那些在市场拉升中比大市指数增长比例多、在调整中比大市指数下跌少的股票。在下跌趋势中，选择弱于市场的股票。如果你对某只个股不确定，那就继续筛选其他股票。在这个步骤，将个股与最相关的市场指数进行比较，进行选股。\n选择“原因”等于或超过您的最低目标的股票\n在威科夫的选股和交易管理中，一个重要组成部分是使用点数图（P＆F）来预测目标价位。不管是长线还是短线交易，这个独特方法同样适用。在威科夫的“因果关系”的基本原理中，交易区间内的水平点数计算代表“原因”，随后的价格移动代表“结果”。因此，如果您打算做多，就要选择正在吸筹或再吸筹的股票，并有足够的上涨“原因”来满足您的要求。步骤3要使用个股的点数图（P＆F）。\n确定股票已经做好准备移动\n模式识别\n当股市指数反转时，要及时有应变措施\n3/4 以上股票的走势和市场一致。把握市场的动向才能提高交易的成功率。某些具体的威科夫交易原则会帮助我们尽早发现市场可能的转折点。例如，特性改变K线，即在大幅上涨后出现的高量大阴线，能够警示我们保护利润。其他措施，例如设好止损单，然后使用威科夫的浮动止损，追随行情，攫取最大利润，直到交易结束。"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#威科夫三大原理",
+    "href": "midphisics/technicalAnalysis.html#威科夫三大原理",
+    "title": "技术分析",
+    "section": "威科夫三大原理",
+    "text": "威科夫三大原理\n威科夫的图谱分析法基于三大原理，这三大原理影响了股票分析的各个方面。 比如对于市场指数和个股的方向预测、如何选股、进场的合适点位，以及价格目标的预测。\n\n供需原理决定了价格的方向\n\n当供小于求时，价格就会上涨；当供大于求时，价格就会下跌。交易者可以通过K线和阴阳波段的量价关系来分析供需关系。这个定律听起来很简单，但是需要花费很长时间进行练习，才能精准地把握量价关系。\n\n因果原理能说明未来价格涨跌的幅度\n\n因果关系可以帮助投资者预测目标价位。 可以用点数图来分析原因并预测结果。 “因” 就是点数图中的水平点数，“果”就是由这些点造成的股价上下运动。可以通过交易区间的吸筹或派发的力度，以及其后价格向上或向下的趋势运动来观察分析。\n\n努力与结果原理可以提前预警趋势的变化\n\n成交量和价格之间的不协调常常是趋势即将发生改变的信号 。比如在经过很大的一段拉升之后，股票连续放量，但股价的涨幅却在缩小。这个现象说明庄家正在出货。"
+  },
+  {
+    "objectID": "midphisics/technicalAnalysis.html#footnotes",
+    "href": "midphisics/technicalAnalysis.html#footnotes",
+    "title": "技术分析",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n江恩理论精髓 循环，周期 （稳定盈利的秘密，极重要） https://www.youtube.com/watch?v=s35mpPi-uJU&list=PLRGWg7K87hcM3gkyhO5sCjx7nI54ZSySF&index=22↩︎\n波浪理论（2） 8浪结构和波浪理论要点 https://www.youtube.com/watch?v=3q2T9QdbyRY&list=PLRGWg7K87hcM3gkyhO5sCjx7nI54ZSySF&index=14↩︎"
   }
 ]

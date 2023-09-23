@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>web</title>
+<title>金融交易框架 - 之前不要怕，之后不要悔，人生无常，向死而生</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,10 +35,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,6 +61,29 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-98V0B368MJ"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-98V0B368MJ', { 'anonymize_ip': true});
+</script>
+
+<script src="site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.28.1/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.4/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.4/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -72,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">web</span>
+    <span class="navbar-title">金融交易框架</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -83,14 +108,46 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Home</span></a>
+ <span class="menu-text">主页</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">市场分析</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="./midphisics/financialMarket.html" rel="" target="">
+ <span class="dropdown-text">金融市场</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./midphisics/technicalAnalysis.html" rel="" target="">
+ <span class="dropdown-text">技术分析</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./midphisics/tapAnalysis.html" rel="" target="">
+ <span class="dropdown-text">盘口分析</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./midphisics/fundamentalAnalysis.html" rel="" target="">
+ <span class="dropdown-text">基本面分析</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./midphisics/portfolioManagement.html" rel="" target="">
+ <span class="dropdown-text">投资组合管理</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./midphisics/buypoints.html" rel="" target="">
+ <span class="dropdown-text">云聪十三个买卖点</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./midphisics/tradingSystem.html" rel="" target="">
+ <span class="dropdown-text">交易系统</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -101,14 +158,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#行业情况" id="toc-行业情况" class="nav-link active" data-scroll-target="#行业情况">行业情况</a></li>
+  <li><a href="#金融市场本质" id="toc-金融市场本质" class="nav-link" data-scroll-target="#金融市场本质">金融市场本质</a></li>
+  <li><a href="#成为专业交易员" id="toc-成为专业交易员" class="nav-link" data-scroll-target="#成为专业交易员">成为专业交易员</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">web</h1>
+<h1 class="title">之前不要怕，之后不要悔，人生无常，向死而生</h1>
 </div>
 
 
@@ -123,12 +188,254 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<hr>
+<section id="行业情况" class="level1">
+<h1>行业情况</h1>
+<ul>
+<li>绝大多数市场参与者亏钱
+<ul>
+<li>在杠杆交易中只有5%的连续盈利</li>
+<li>在股票交易中只有20%的连续盈利</li>
+</ul></li>
+<li>市场参与者存在最多的三种人
+<ul>
+<li>大师: 可能有真的方法。喜欢把简单的包装起来，故弄玄虚。</li>
+<li>骗子: 一根K线打天下，一个指标赚上百万<br>
+</li>
+<li>偏执狂: 失败的多偏执，成功的更谦虚。不理解，也不想理解，还喜欢评判。</li>
+</ul></li>
+<li>为什么？
+<ul>
+<li>金融市场本身不存在圣杯。<br>
+</li>
+<li>参与金融交易门槛低: 一般来说进入门槛越低，赚钱越难。类似金融交易，赌博，彩票
+<ul>
+<li>无时间限制</li>
+<li>无专业要求</li>
+<li>无纪律要求</li>
+<li>无资金要求和限制</li>
+</ul></li>
+<li>进入门槛高的职业: 工程师，医生，律师，高翻，科学家，专业交易员，分析师</li>
+</ul></li>
+</ul>
+</section>
+<section id="金融市场本质" class="level1">
+<h1>金融市场本质</h1>
+<p><img src="img/Theprinciple-reflexivity-financial-markets.svg" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li>市场行情
+<ul>
+<li>因为市场是不可知不可测的，所以不存在一种能解释完全行情的方法。所有的方法都有周期性和概率性。<br>
+</li>
+<li>市场不是数学公式，是反映参与者心理。不同的人，资金不同，周期不同，面对同一张行情图，多空完全不同。</li>
+<li>市场是一个混沌系统，像是天气。预测不准市场就像天气预报不可能准确。
+<ul>
+<li>黑天鹅现象: 市场不可能全被知道，所以会经常出现没有出现过的现象。</li>
+<li>灰犀牛现象: 行情是参与者情绪的表达，如果情绪不一致就会出现横盘，如果情绪一致就会出现趋势
+<ul>
+<li>情绪有两种: 贪婪和恐惧</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>市场分析
+<ul>
+<li>盘口分析，技术分析和基本面分析是现在最有效的三种分析方式。本质是三个维度去理解行情，但都是不全面的，好似盲人摸象。</li>
+</ul></li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>分析方法</th>
+<th>解释</th>
+<th>择时</th>
+<th>使用场景</th>
+<th>对比</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>基本面分析</td>
+<td>通过从宏观，行业和公司价值来判断股价是否背离。实际上一个公司的价值是交易者愿意给的价钱而不是本身的特性。</td>
+<td>买什么</td>
+<td>长线</td>
+<td>主流，效果虚无</td>
+</tr>
+<tr class="even">
+<td>技术面分析</td>
+<td>历史成交单形成K线。通过对历史的K线特点分析来判断未来可能情况。图表决定一切</td>
+<td>周和天级别入口</td>
+<td>中短线</td>
+<td>非主流，效果好</td>
+</tr>
+<tr class="odd">
+<td>盘口分析</td>
+<td>通过分析挂单和吃单来了解大资金最新的动向。通过跟随大资金来获得稳定盈利。利润空间最小，盈利率最高。</td>
+<td>分钟入口</td>
+<td>超短线交易，剥头皮交易，高频交易，炒单</td>
+<td>极小众，极有用</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>赚钱和赌博
+<ul>
+<li>买卖金融产品的正差价就是盈利</li>
+<li>参与者影响行情唯一途径是挂单或者下单。
+<ul>
+<li>价格是最直接，最重要的研究点</li>
+</ul></li>
+<li>由于市场不可知特性，参与者必定会感受到随机激励。如果克服不了随机激励就会产生赌博式的快感和悲剧。
+<ul>
+<li>设计自己的交易系统，坚定执行。</li>
+<li>控制风险，亏损不能超过2%
+<ul>
+<li>严格止损 (点位止损和时间止损): 你只要不止损，就成了别人的猎物</li>
+<li>仓位管理</li>
+<li>风险对冲</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="成为专业交易员" class="level1">
+<h1>成为专业交易员</h1>
+<ul>
+<li><p>持续学习金融交易认知金字塔 <img src="img/Alchemy-Pyramid-of-Financial-Transactions.svg" class="img-fluid" style="width:100.0%"></p></li>
+<li><p>锻炼自己的交易技巧 <img src="img/trading-practice.svg" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li>学习期: 13买点，交易区间，盘口规律</li>
+<li>练习期: 止损，止盈，大小区间</li>
+<li>大量实盘和复盘练习盘感<br>
+</li>
+<li>赚钱期:
+<ul>
+<li>少做: 控制风险</li>
+<li>多做: 设最大亏损。比如设置每天最大亏2%</li>
+</ul></li>
+</ul></li>
+<li><p>根据自己的性格来设计，设计交易系统 <img src="img/Short-term-technical-logic-trading-system.svg" class="img-fluid" style="width:100.0%"></p></li>
+<li><p>云聪十三个买卖点<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>，<strong>价值连城</strong> <img src="img/buypoints.svg" class="img-fluid" style="width:100.0%"></p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6f366833050c84b2dd88" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6f366833050c84b2dd88">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;2B结构&quot;,&quot;大形态突破&quot;,&quot;弹簧&quot;,&quot;底部头肩可能形成右肩的地方&quot;,&quot;底部头肩右肩形成的二次测试&quot;,&quot;共振&quot;,&quot;回调&quot;,&quot;强势初现&quot;,&quot;趋势线 + 量能累积突破&quot;,&quot;趋势线 + 形态突破&quot;,&quot;趋势线+ 点位突破&quot;,&quot;突破后N字上涨&quot;,&quot;突破后回抽 + 站稳&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;抢筹 或 猎杀止损&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;底部结构 反转&quot;,&quot;底部双突破&quot;,&quot;底部突破 回调&quot;,&quot;底部突破 中继&quot;,&quot;中继箱体&quot;,&quot;中继箱体 多周期共振突破&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;茶杯带柄 老鸭头&quot;,&quot;点位 趋势线&quot;,&quot;量能累积 趋势线&quot;,&quot;盘整&quot;,&quot;盘整 形态突破&quot;,&quot;头肩&quot;,&quot;形态&quot;,&quot;形态 趋势线&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;强势初现&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;1/2处&quot;,&quot;五浪下跌&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;大阳线&quot;,&quot;大阳线+大阴线&quot;,&quot;弹簧 箱体顺势大阳线&quot;,&quot;突破&quot;,&quot;突破 + 回抽 + N字&quot;,&quot;突破 + 回抽 + 站稳&quot;,&quot;下引线 大阳线&quot;,&quot;形态突破&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["2B结构","底部头肩可能形成右肩的地方","底部头肩右肩形成的二次测试","强势初现","趋势线 + 量能累积突破","趋势线+ 点位突破","趋势线 + 形态突破","大形态突破","突破后回抽 + 站稳","突破后N字上涨","回调","弹簧","共振"],["抢筹 或 猎杀止损",null,null,null,null,null,null,null,null,null,null,null,null],["底部结构 反转","底部结构 反转","底部结构 反转","底部结构 反转","底部双突破","底部双突破","底部双突破","底部双突破","底部突破 中继","底部突破 中继","底部突破 回调","中继箱体","中继箱体 多周期共振突破"],["形态","头肩","头肩","盘整","量能累积 趋势线","点位 趋势线","形态 趋势线","盘整 形态突破","茶杯带柄 老鸭头",null,null,null,null],[null,null,null,"强势初现",null,null,null,null,null,null,null,null,null],["五浪下跌","1/2处",null,null,null,null,null,null,null,null,null,null,null],["大阳线+大阴线",null,null,"大阳线","突破","突破","突破","突破","突破 + 回抽 + 站稳","突破 + 回抽 + N字","下引线 大阳线","弹簧 箱体顺势大阳线","形态突破"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>买点<\/th>\n      <th>含义<\/th>\n      <th>阶段<\/th>\n      <th>道氏<\/th>\n      <th>威克夫<\/th>\n      <th>波浪.谐波<\/th>\n      <th>K线信号.盘口<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"columnDefs":[],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<ul>
+<li>日内交易计划
+<ul>
+<li>目的: 第一稳定，第二收益率。稳定和盈利不可兼得。</li>
+<li>纪律:
+<ul>
+<li>早盘大亏或小盈利，下午不做。方法不适合行情。</li>
+</ul></li>
+<li>步骤:
+<ul>
+<li>选品种:
+<ul>
+<li>手续费低
+<ul>
+<li>美国的迷你股指</li>
+</ul></li>
+<li>流动性好
+<ul>
+<li>期货中的主力合约，持仓量大，成交量大</li>
+</ul></li>
+<li>盘口规律明显
+<ul>
+<li>大单进入，股价明显上涨</li>
+<li>大单下砸，股价明显下降</li>
+</ul></li>
+</ul></li>
+<li>研究波动率:
+<ul>
+<li>历史日K线，30分钟K线，日内分时图复盘: 趋势线，形态，支撑压力<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>，13买点</li>
+<li>统计分析日内波动率
+<ul>
+<li>大区间，一波上涨或下跌多少个点</li>
+<li>小区间，一波弱势和强势的反弹或回调多少个点</li>
+<li>一波盘整多少个点</li>
+</ul></li>
+<li>使用
+<ul>
+<li>判断大小区间
+<ul>
+<li>大区间，在波动率基础上做趋势</li>
+<li>小区间，在波动率基础上做波动。某只股票历史上的反弹是100个点，今天这只股票反弹到100个点的时候马上走。不要贪婪</li>
+</ul></li>
+</ul></li>
+<li>基本面研究做参考</li>
+</ul></li>
+<li>择时: 避开死亡时段
+<ul>
+<li>趋势交易法:
+<ul>
+<li>震荡时段是死亡时段 (中午)</li>
+<li>开盘后一小时和收盘前一小时容易出行情</li>
+</ul></li>
+<li>行情甄别: <strong>好做</strong>，不好做，一般，不知道
+<ul>
+<li>好多: 多做</li>
+<li>不好做，避免做，小心报复心理:
+<ul>
+<li>大V反转: 直上直下的V型反转</li>
+<li>极小盘整: 波动率很小的盘整<br>
+</li>
+<li>倒三角形: 很少<br>
+</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>制定交易计划
+<ul>
+<li>定方向: 今天是要做多，做空或双向做 还是不做。一旦决定，不要轻易改变
+<ul>
+<li>顺大逆小: 如果大势是涨，尽量做涨。如果大势是跌，尽量做跌。</li>
+<li>逆势衰竭</li>
+<li>明确反转: Pinbar, K线组合，二次测试，形态突破</li>
+</ul></li>
+<li>画盘中交易的区间:
+<ul>
+<li>顺势突破</li>
+<li>回调: 支撑，压力，量能积累，分价图，中轴线位(箱体)，机构订单流，点位，Pinbar(针线), 形态</li>
+</ul></li>
+<li>盘前分析:
+<ul>
+<li>高开: 做？不做？</li>
+<li>平开: 做？不做？</li>
+<li>低开: 做？不做？</li>
+</ul></li>
+</ul></li>
+<li>开盘后
+<ul>
+<li>定大小区间，应用对应的波动率，决定持仓长短</li>
+<li>等待: 飞云十三个买点+盘口确认 (跟随大单) + 盈亏比</li>
+<li>情绪或身体不好，不交易</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>云聪金融交易分析 https://www.youtube.com/<span class="citation" data-cites="yuncongtrade">@yuncongtrade</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>道氏理论<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -149,6 +456,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

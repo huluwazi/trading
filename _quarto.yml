@@ -3,18 +3,35 @@ project:
   output-dir: docs
 
 website:
-  title: "web"
+  title: "金融交易框架"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: 主页
+      - text: 市场分析
+        menu:
+          - midphisics/financialMarket.qmd
+          - midphisics/technicalAnalysis.qmd
+          - midphisics/tapAnalysis.qmd
+          - midphisics/fundamentalAnalysis.qmd
+          - midphisics/portfolioManagement.qmd
+          - midphisics/buypoints.qmd
+          - midphisics/tradingSystem.qmd
+          
+
+  google-analytics:
+    tracking-id: "G-98V0B368MJ"
+    anonymize-ip: true
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
+
+
 
 
 

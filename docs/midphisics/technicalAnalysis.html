@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>金融交易框架 - 技术分析</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-98V0B368MJ"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-98V0B368MJ', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">金融交易框架</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">主页</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">市场分析</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="../midphisics/financialMarket.html" rel="" target="">
+ <span class="dropdown-text">金融市场</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../midphisics/technicalAnalysis.html" rel="" target="">
+ <span class="dropdown-text">技术分析</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../midphisics/tapAnalysis.html" rel="" target="">
+ <span class="dropdown-text">盘口分析</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../midphisics/fundamentalAnalysis.html" rel="" target="">
+ <span class="dropdown-text">基本面分析</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../midphisics/portfolioManagement.html" rel="" target="">
+ <span class="dropdown-text">投资组合管理</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../midphisics/buypoints.html" rel="" target="">
+ <span class="dropdown-text">云聪十三个买卖点</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../midphisics/tradingSystem.html" rel="" target="">
+ <span class="dropdown-text">交易系统</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#道氏理论" id="toc-道氏理论" class="nav-link active" data-scroll-target="#道氏理论">道氏理论</a>
+  <ul class="collapse">
+  <li><a href="#趋势线和加速线" id="toc-趋势线和加速线" class="nav-link" data-scroll-target="#趋势线和加速线">趋势线和加速线</a></li>
+  <li><a href="#形态" id="toc-形态" class="nav-link" data-scroll-target="#形态">形态</a>
+  <ul class="collapse">
+  <li><a href="#反转形态" id="toc-反转形态" class="nav-link" data-scroll-target="#反转形态">反转形态</a></li>
+  <li><a href="#中继形态" id="toc-中继形态" class="nav-link" data-scroll-target="#中继形态">中继形态</a></li>
+  <li><a href="#总结" id="toc-总结" class="nav-link" data-scroll-target="#总结">总结</a></li>
+  </ul></li>
+  <li><a href="#缺口理论" id="toc-缺口理论" class="nav-link" data-scroll-target="#缺口理论">缺口理论</a></li>
+  <li><a href="#支撑与压力测试" id="toc-支撑与压力测试" class="nav-link" data-scroll-target="#支撑与压力测试">支撑与压力测试</a>
+  <ul class="collapse">
+  <li><a href="#点位支撑压力测试" id="toc-点位支撑压力测试" class="nav-link" data-scroll-target="#点位支撑压力测试">点位支撑压力测试</a></li>
+  <li><a href="#成交量形成的支撑与压力-volume-profile" id="toc-成交量形成的支撑与压力-volume-profile" class="nav-link" data-scroll-target="#成交量形成的支撑与压力-volume-profile">成交量形成的支撑与压力 Volume profile</a></li>
+  <li><a href="#支撑与压力互换" id="toc-支撑与压力互换" class="nav-link" data-scroll-target="#支撑与压力互换">支撑与压力互换</a></li>
+  </ul></li>
+  <li><a href="#交易区间和盈亏比的运算" id="toc-交易区间和盈亏比的运算" class="nav-link" data-scroll-target="#交易区间和盈亏比的运算">交易区间和盈亏比的运算</a></li>
+  <li><a href="#突破逆转与持续结构" id="toc-突破逆转与持续结构" class="nav-link" data-scroll-target="#突破逆转与持续结构">突破、逆转与持续结构</a></li>
+  </ul></li>
+  <li><a href="#威科夫交易-tape-reading" id="toc-威科夫交易-tape-reading" class="nav-link" data-scroll-target="#威科夫交易-tape-reading">威科夫交易 tape reading</a>
+  <ul class="collapse">
+  <li><a href="#三大法则" id="toc-三大法则" class="nav-link" data-scroll-target="#三大法则">三大法则</a></li>
+  <li><a href="#应用" id="toc-应用" class="nav-link" data-scroll-target="#应用">应用</a></li>
+  <li><a href="#识别模式" id="toc-识别模式" class="nav-link" data-scroll-target="#识别模式">识别模式</a>
+  <ul class="collapse">
+  <li><a href="#吸筹" id="toc-吸筹" class="nav-link" data-scroll-target="#吸筹">吸筹</a></li>
+  <li><a href="#派发" id="toc-派发" class="nav-link" data-scroll-target="#派发">派发</a></li>
+  </ul></li>
+  <li><a href="#威科夫五步法" id="toc-威科夫五步法" class="nav-link" data-scroll-target="#威科夫五步法">威科夫五步法</a></li>
+  <li><a href="#威科夫三大原理" id="toc-威科夫三大原理" class="nav-link" data-scroll-target="#威科夫三大原理">威科夫三大原理</a></li>
+  </ul></li>
+  <li><a href="#江恩理论1" id="toc-江恩理论1" class="nav-link" data-scroll-target="#江恩理论1">江恩理论</a></li>
+  <li><a href="#波浪理论2" id="toc-波浪理论2" class="nav-link" data-scroll-target="#波浪理论2">波浪理论</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">技术分析</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<hr>
+<section id="道氏理论" class="level1">
+<h1>道氏理论</h1>
+<section id="趋势线和加速线" class="level2">
+<h2 class="anchored" data-anchor-id="趋势线和加速线">趋势线和加速线</h2>
+<p><img src="../img/daoTradingLine.svg" class="img-fluid" style="width:40.0%"></p>
+<ol type="1">
+<li>趋势线
+<ul>
+<li>最少穿越两个高点和低点<br>
+</li>
+<li>触点越多越有效，时间越长越有效
+<ul>
+<li>有效:表示很<strong>稳定</strong>。 如果在趋势线上方，代表趋势很完整，不需要着急走。</li>
+</ul></li>
+<li>趋势=惯性=平衡
+<ul>
+<li><strong>趋势线没有支撑作用</strong></li>
+</ul></li>
+</ul></li>
+<li>趋势线的角度，两条加速线到顶
+<ul>
+<li>以前在纸上画趋势线角度，现在在电脑上角度随缩放变化
+<ul>
+<li>45度左右，趋势平稳</li>
+<li>60度左右，行情开始不稳定</li>
+<li>80度左右，非常不稳定</li>
+</ul></li>
+<li>两条加速线到顶
+<ul>
+<li>行情可能不稳定</li>
+</ul></li>
+</ul></li>
+<li>趋势线的毛刺
+<ul>
+<li>穿透，跌破，回抽: 根据<strong>K线组合+量+缺口</strong>判断
+<ul>
+<li>如果没有产生明确的K线组合+量+缺口: 可以忽略</li>
+<li>两个大阴线或者一根大阴线+小十字星+大阴线: 超过5%，趋势可能发生改变。但是不一定反转，也可能变成形态 (中继形态，反转形态)</li>
+</ul></li>
+</ul></li>
+<li>趋势线跌破后的回抽
+<ul>
+<li>强势回抽，两根大阴线跌破，两根大阳线回去 ==&gt; 趋势延续 ==&gt; 抢筹</li>
+<li>弱势回抽，两根大阴线跌破，缩量小阳线慢慢回到趋势，需要等信号
+<ul>
+<li>继续有大阴线，行情可能翻转</li>
+<li>没有大阴线，行情继续</li>
+</ul></li>
+<li>横向盘整，大概率有个波浪理论的ABC下跌</li>
+</ul></li>
+</ol>
+</section>
+<section id="形态" class="level2">
+<h2 class="anchored" data-anchor-id="形态">形态</h2>
+<p>趋势之后，盘整期间会形成形态。</p>
+<section id="反转形态" class="level3">
+<h3 class="anchored" data-anchor-id="反转形态">反转形态</h3>
+<ul>
+<li><p>头肩底 ABCD <img src="../img/toujian.svg" class="img-fluid" style="width:100.0%"></p></li>
+<li><p>倒三角形，喇叭形 <img src="../img/daosanjiaoxing.svg" class="img-fluid" style="width:100.0%"></p></li>
+<li><p>菱形，钻石型</p></li>
+</ul>
+<p><img src="../img/lingxing.svg" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li>圆弧形，茶杯带柄，老鸭头
+<ul>
+<li>最好带量跌破或突破</li>
+</ul></li>
+</ul>
+<p><img src="../img/yuanhu.svg" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li>岛型反转</li>
+</ul>
+<p><img src="../img/daoxingfanzhuan.svg" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="中继形态" class="level3">
+<h3 class="anchored" data-anchor-id="中继形态">中继形态</h3>
+<ul>
+<li>直角三角形/ 直边三角形，概率很高
+<ul>
+<li>突破买入<br>
+</li>
+<li>跌破卖出</li>
+</ul></li>
+</ul>
+<p><img src="../img/zhijiaosanjiaoxing.svg" class="img-fluid" style="width:50.0%"></p>
+<ul>
+<li>普通三角形，楔形，旗形, 窄幅震荡箱体
+<ul>
+<li>盘整过程中，波动率小 <img src="../img/sanjiaoxing.svg" class="img-fluid" style="width:80.0%"></li>
+</ul></li>
+<li>通道</li>
+</ul>
+<p><img src="../img/tongdao.svg" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="总结" class="level3">
+<h3 class="anchored" data-anchor-id="总结">总结</h3>
+<ul>
+<li>波动率小，中继形态。持有</li>
+<li>波动率大，反转形态。买卖点</li>
+<li>波动率大赚小，买入机会</li>
+</ul>
+</section>
+</section>
+<section id="缺口理论" class="level2">
+<h2 class="anchored" data-anchor-id="缺口理论">缺口理论</h2>
+<p>适用于A股，美股和商品期货: 集合竞价会产生缺口</p>
+<ul>
+<li>形态内的缺口几乎没有意义<br>
+</li>
+<li>形态突破的缺口追重要<br>
+</li>
+<li>关键位置缺口次之</li>
+</ul>
+<p>缺口是反人性的，有了缺口要沿着方向做</p>
+<p><img src="../img/quekou.svg" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="支撑与压力测试" class="level2">
+<h2 class="anchored" data-anchor-id="支撑与压力测试">支撑与压力测试</h2>
+<ul>
+<li>需要有盘口来确认是否时支撑或压力</li>
+</ul>
+<section id="点位支撑压力测试" class="level3">
+<h3 class="anchored" data-anchor-id="点位支撑压力测试">点位支撑压力测试</h3>
+<ol type="1">
+<li>前期点位 : 历史记忆，基本面估值 (机构拉上去)</li>
+<li>斐波那契反推点</li>
+<li>谐波点位反推<br>
+</li>
+<li>缺口处形成支撑<br>
+</li>
+<li>整数关口</li>
+</ol>
+</section>
+<section id="成交量形成的支撑与压力-volume-profile" class="level3">
+<h3 class="anchored" data-anchor-id="成交量形成的支撑与压力-volume-profile">成交量形成的支撑与压力 Volume profile</h3>
+<p><img src="../img/volumeProfile.svg" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="支撑与压力互换" class="level3">
+<h3 class="anchored" data-anchor-id="支撑与压力互换">支撑与压力互换</h3>
+<ul>
+<li>点位<br>
+</li>
+<li>箱体</li>
+</ul>
+<p><img src="../img/zhichengyuyali.svg" class="img-fluid" style="width:50.0%"></p>
+</section>
+</section>
+<section id="交易区间和盈亏比的运算" class="level2">
+<h2 class="anchored" data-anchor-id="交易区间和盈亏比的运算">交易区间和盈亏比的运算</h2>
+<p><img src="../img/jiaoyiqujianheyingkuibi.svg" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="突破逆转与持续结构" class="level2">
+<h2 class="anchored" data-anchor-id="突破逆转与持续结构">突破、逆转与持续结构</h2>
+<ul>
+<li>三个买入点 突破、逆转与持续<br>
+<img src="../img/jibenjiegou.svg" class="img-fluid" style="width:100.0%"></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="威科夫交易-tape-reading" class="level1">
+<h1>威科夫交易 tape reading</h1>
+<ul>
+<li>盘口三大因素:
+<ul>
+<li>挂单(maker)</li>
+<li>成交(分时量，每个时间点位成交数量)/吃单(taker)</li>
+<li>分价量(每个价位成交数量)</li>
+</ul></li>
+</ul>
+<section id="三大法则" class="level2">
+<h2 class="anchored" data-anchor-id="三大法则">三大法则</h2>
+<ul>
+<li>拉动价格是本质是<em>供给与需求</em>，导致价格的上升与下跌
+<ul>
+<li>供给: 谁在买
+<ul>
+<li><p>威科夫的综合人（Composite Man）</p>
+<blockquote class="blockquote">
+<p>威科夫提醒交易者应该跟随综合人（Composite Man）的脚步，像综合人一样思考。他说</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>要把市场中所有的股票、所有的波动都当做一个人操作的结果，这个人称之为综合人。从理论上说，这个人在后台操控着股票。如果你熟悉他的游戏规则，你将大大收益；如果你不懂他的规则，他的操作将不利于你。</p>
+</blockquote>
+<p>总而言之，威科夫的理念认为:：</p>
+<ul>
+<li><p>综合人认真地计划、执行并完成自己的股票操作过程。</p></li>
+<li><p>综合人在积累了大量的筹码以后，就通过高成交量来吸引散户进场买入。通过大量的买入和卖出，成交量显著放大，向散户显示这只股票前景广阔。</p></li>
+<li><p>交易者必须研究个股图谱，并判断股票的行动特点和综合人的动机。</p></li>
+<li><p>通过学习和训练，交易者可以有能力洞察图谱背后隐藏的综合人动机。威科夫和他的同事们认为，如果你能了解综合人的意图，你就能更早地发现交易和投资机会，并且从中获利。</p></li>
+</ul></li>
+</ul></li>
+<li>吸筹: 在哪个区间</li>
+<li>配发区: 在哪个区间卖</li>
+<li>对手和其他机构的购买成本</li>
+<li>支撑与压力 (筹码)</li>
+</ul></li>
+</ul>
+<p><img src="../img/wyckoff-Price-Cycle.png" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li>因果
+<ul>
+<li>吸筹区才会有上涨区</li>
+<li>V型反转，卖单衰竭，上涨</li>
+</ul></li>
+<li>努力没结果
+<ul>
+<li>努力了没有结果肯定有问题</li>
+</ul></li>
+</ul>
+</section>
+<section id="应用" class="level2">
+<h2 class="anchored" data-anchor-id="应用">应用</h2>
+<ul>
+<li>识别: 10多个识别模式</li>
+<li>跟随: 跟大资金</li>
+<li>调整: 主力进，你进。主力跑，你跑</li>
+</ul>
+</section>
+<section id="识别模式" class="level2">
+<h2 class="anchored" data-anchor-id="识别模式">识别模式</h2>
+<ol type="1">
+<li>大阳线: 大的垂直供应柱<br>
+</li>
+<li>大阴线: 大的垂直需求柱</li>
+<li>吸筹区:</li>
+</ol>
+<ul>
+<li>涨: 大阳K资金吸筹</li>
+<li>跌: 小K线散户出货</li>
+<li>吸筹区可能会失败</li>
+<li>一个股票要涨，一定有资金的痕迹
+<ul>
+<li>涨，放量，大阳K:上涨放量，大阳K。表示有需求，资金吃货。</li>
+<li>跌，缩量，小K线:量价配合的缩量小K回撤，散户立场<br>
+</li>
+<li>底部放量十字星或小K线，筹码交换<br>
+</li>
+<li>量价异常的小十字星会小K线<br>
+</li>
+</ul></li>
+</ul>
+<ol start="4" type="1">
+<li>强势出现</li>
+<li>跳跃小溪</li>
+</ol>
+<blockquote class="blockquote">
+<p>跳过指价格放量穿过阻力区且振幅比较大。回调则是在跳过以后立即测试价位——回调时是缩量的且振幅小—这就确认了之前的跳过行为是正常的。 威科夫方法告诉你在向上跳的回调处买入，或在向下跳的反弹处做空。同样是威科夫方法告诉你不要在突破时买入，如果突破是假的，你就很被动。因此，第一眼看去，似乎威科夫方法是叫你买弱卖强。但如果你仔细研究后你就会明白，他是叫你在强势信号之后的回调测试时买入</p>
+</blockquote>
+<ol start="6" type="1">
+<li>终极震仓<br>
+终极震仓: 不一定出现，也可能出现多次，庄家最后试探，马上拉起。</li>
+</ol>
+<p><img src="../img/moshishibie.svg" class="img-fluid" style="width:100.0%"></p>
+<section id="吸筹" class="level3">
+<h3 class="anchored" data-anchor-id="吸筹">吸筹</h3>
+<p><img src="../img/Accumulation1_Chinese-scaled.jpg" class="img-fluid" style="width:100.0%"></p>
+<p><img src="../img/Accumulation2_Chinese-scaled.jpg" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="派发" class="level3">
+<h3 class="anchored" data-anchor-id="派发">派发</h3>
+<p><img src="../img/Distribution1_Chinese-scaled.jpg" class="img-fluid" style="width:100.0%"> <img src="../img/Distribution2_Chinese-scaled.jpg" class="img-fluid" style="width:100.0%"></p>
+</section>
+</section>
+<section id="威科夫五步法" class="level2">
+<h2 class="anchored" data-anchor-id="威科夫五步法">威科夫五步法</h2>
+<ol type="1">
+<li><p>确定市场的现状和未来可能的趋势<br>
+目前的市场是盘整还是处于行情中？通过你对市场的结构和供需状况进行分析，是否认为近期将会出现行情？这个分析将决定你是否应该进入市场；如果可以入市，是应该做多还是做空？在这个环节中，要使用市场主要指数的k线图和点数图来进行判断。</p></li>
+<li><p>选择与市场趋势一致的股票<br>
+在上涨趋势中，选择走势比市场更强的股票。比如，寻找那些在市场拉升中比大市指数增长比例多、在调整中比大市指数下跌少的股票。在下跌趋势中，选择弱于市场的股票。如果你对某只个股不确定，那就继续筛选其他股票。在这个步骤，将个股与最相关的市场指数进行比较，进行选股。</p></li>
+<li><p>选择“原因”等于或超过您的最低目标的股票<br>
+在威科夫的选股和交易管理中，一个重要组成部分是使用点数图（P＆F）来预测目标价位。不管是长线还是短线交易，这个独特方法同样适用。在威科夫的“因果关系”的基本原理中，交易区间内的水平点数计算代表“原因”，随后的价格移动代表“结果”。因此，如果您打算做多，就要选择正在吸筹或再吸筹的股票，并有足够的上涨“原因”来满足您的要求。步骤3要使用个股的点数图（P＆F）。</p></li>
+<li><p>确定股票已经做好准备移动<br>
+模式识别</p></li>
+<li><p>当股市指数反转时，要及时有应变措施<br>
+3/4 以上股票的走势和市场一致。把握市场的动向才能提高交易的成功率。某些具体的威科夫交易原则会帮助我们尽早发现市场可能的转折点。例如，特性改变K线，即在大幅上涨后出现的高量大阴线，能够警示我们保护利润。其他措施，例如设好止损单，然后使用威科夫的浮动止损，追随行情，攫取最大利润，直到交易结束。</p></li>
+</ol>
+</section>
+<section id="威科夫三大原理" class="level2">
+<h2 class="anchored" data-anchor-id="威科夫三大原理">威科夫三大原理</h2>
+<p>威科夫的图谱分析法基于三大原理，这三大原理影响了股票分析的各个方面。 比如对于市场指数和个股的方向预测、如何选股、进场的合适点位，以及价格目标的预测。</p>
+<ol type="1">
+<li>供需原理决定了价格的方向</li>
+</ol>
+<p>当供小于求时，价格就会上涨；当供大于求时，价格就会下跌。交易者可以通过K线和阴阳波段的量价关系来分析供需关系。这个定律听起来很简单，但是需要花费很长时间进行练习，才能精准地把握量价关系。</p>
+<ol start="2" type="1">
+<li>因果原理能说明未来价格涨跌的幅度</li>
+</ol>
+<p>因果关系可以帮助投资者预测目标价位。 可以用点数图来分析原因并预测结果。 “因” 就是点数图中的水平点数，“果”就是由这些点造成的股价上下运动。可以通过交易区间的吸筹或派发的力度，以及其后价格向上或向下的趋势运动来观察分析。</p>
+<ol start="3" type="1">
+<li>努力与结果原理可以提前预警趋势的变化</li>
+</ol>
+<p>成交量和价格之间的不协调常常是趋势即将发生改变的信号 。比如在经过很大的一段拉升之后，股票连续放量，但股价的涨幅却在缩小。这个现象说明庄家正在出货。</p>
+</section>
+</section>
+<section id="江恩理论1" class="level1">
+<h1>江恩理论<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></h1>
+<p>前期是神秘学，后期江恩有意义。</p>
+<ul>
+<li><p>循环:</p>
+<ul>
+<li>分形</li>
+<li>大浪套小浪</li>
+</ul></li>
+<li><p>周期:</p>
+<ul>
+<li>小<strong>波动率</strong>后是大的波动率，大的波动率后是是小的波动率。<br>
+</li>
+<li>资金曲线，一个月挣的钱，三天亏光。小鸟一样吃，大象一样的拉。
+<ul>
+<li>期货高手: 媒体造神，开创基金，亏得一塌糊涂</li>
+</ul></li>
+<li>周期: 股票价格有周期，方法有周期。一旦方法不合适，不做。</li>
+<li>春生、夏长、秋收、冬藏</li>
+</ul></li>
+</ul>
+</section>
+<section id="波浪理论2" class="level1">
+<h1>波浪理论<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></h1>
+<ul>
+<li><p>一个完整的周期是由五浪上升，三浪下跌 <img src="../img/balanglilun.svg" class="img-fluid" style="width:100.0%"></p></li>
+<li><p>大小周期 分形:大浪包小浪 <img src="../img/zhouqi.svg" class="img-fluid" style="width:100.0%"></p></li>
+<li><p>牛熊周期，八浪对应， <img src="../img/niushi.svg" class="img-fluid" style="width:100.0%"></p>
+<p><img src="../img/xiongshi.svg" class="img-fluid" style="width:100.0%"></p></li>
+<li><p>机构操盘 养 套 杀</p>
+<ul>
+<li>在关键点位大资金推高股价</li>
+</ul></li>
+<li><p>回调与反抽的计算</p>
+<ul>
+<li>0.38, 0.5, 0.618</li>
+</ul></li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>江恩理论精髓 循环，周期 （稳定盈利的秘密，极重要） https://www.youtube.com/watch?v=s35mpPi-uJU&amp;list=PLRGWg7K87hcM3gkyhO5sCjx7nI54ZSySF&amp;index=22<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>波浪理论（2） 8浪结构和波浪理论要点 https://www.youtube.com/watch?v=3q2T9QdbyRY&amp;list=PLRGWg7K87hcM3gkyhO5sCjx7nI54ZSySF&amp;index=14<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
