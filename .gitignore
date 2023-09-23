@@ -1,6 +1,7 @@
 /.quarto/
 /data/
 /img/
+/qqq/
 /midphisics/
 *.qmd
 *.yml
